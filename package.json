@@ -1,0 +1,19 @@
+{
+  "name": "weatherapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "xternalAPI.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "keywords": [
+    "WeatherApi"
+  ],
+  "author": "Kamil",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "view": "^1.1.1"
+  }
+}

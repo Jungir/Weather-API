@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        .container{
+            max-width: 960px;
+            
+        }
+        .card{
+            margin: 0 auto;
+        }
+        .form-group{
+            max-width: 18rem;
+            margin: 0 auto;
+        }
+        
+        
+        body{
+            background: #f4f4f4;
+            letter-spacing: .1rem;
+         
+        }
+        div.last{
+            white-space: normal;
+        }
+        .dispayNone {
+            display: none;
+        }
+        .card{
+            border: none;
+            position: relative;
+        }
+
+        div.icon {
+            position: absolute;
+            top: 230px;
+            left: 33%;
+            border-radius: 50%;
+           
+        }
+        .card-body{
+            margin-top: 2rem;
+        }
+        .mainImg{
+            width: 100%;
+            height: 100%;
+            
+        }
+        i img{
+            background: rgb(197, 197, 197);
+            border-radius: 50%;
+        }
+    </style>
+    <title>weatherAPI</title>
+</head>
+<body>
+    <div class="container text-center">
+        <h1 class="my-3 text-muted"> Weather API</h1>
+        <form class="form-group text-muted">
+            <small id="emailHelp" class="form-text text-muted mb-2">Enter a location for wather info</small>
+            <input type="text" class="form-control mb-3" name="search" aria-describedby="emailHelp" placeholder="Enter location">
+        </form>
+    
+        <div class="bg-light dispayNone card align-items-center shadow" style="width: 18rem;">
+            <img src="img/night.svg" class="mainImg card-img-top" >
+            <div class="icon bg-light mx-auto text-center">
+                <i class="icon"><img src="img/icons/11.svg" ></i>    
+                <!-- icon -->
+            </div>
+            <div class="cardBody card-body text-muted">
+                
+                <h4 class="card-title city"></h4>
+                <p class="card-text weatherState"></p>
+                <div class="last display-3 my-4">
+                    <span class="temperature"></span>
+                    <span>&deg;c</span>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </div>
+   
+
+    <script src="/xternalAPI.js"></script>
+  
+</body>
+</html>
