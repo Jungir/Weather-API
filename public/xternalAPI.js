@@ -21,7 +21,8 @@ city.addEventListener('submit', function(event){
     localStorage.setItem('city', nameCity);
 
     getCity(nameCity).then(function (cityInfo) {
-        let cityResultKey = cityInfo[0].Key;
+     
+        let cityResultKey = Number(cityInfo[0].Key);
         h4.textContent = cityInfo[0].EnglishName;
         return cityResultKey;
     }).then(function (cityKey) {
