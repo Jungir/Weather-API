@@ -49,13 +49,13 @@ city.addEventListener('submit', function(event){
 });
 
 let getCity = async function (city){
-    const respose = await fetch(`http://dataservice.accuweather.com/locations/v1/cities/search?apikey=%20%09${apiKey}%20&q=${city}`);
+    const respose = await fetch(`https://dataservice.accuweather.com/locations/v1/cities/search?apikey=%20%09${apiKey}%20&q=${city}`);
     const data = await respose.json();
     return data;
 }
 
 let getWather = async function (key){
-    const response = await fetch(`http://dataservice.accuweather.com/forecasts/v1/hourly/1hour/${key}?apikey=${apiKey}`);
+    const response = await fetch(`https://dataservice.accuweather.com/forecasts/v1/hourly/1hour/${key}?apikey=${apiKey}`);
     const data = await response.json();
     return data;
 }
